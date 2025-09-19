@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Особенности обеспечения различных видов ИС</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50, #1a2530);
+            color: white;
+            padding: 30px 20px;
+            margin-bottom: 30px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+            color: #2c3e50;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            margin: 25px 0 15px;
+            color: #2980b9;
+        }
+        
+        p {
+            margin-bottom: 16px;
+            text-align: justify;
+        }
+        
+        .content-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: 600;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        tr:hover {
+            background-color: #e8f4fc;
+        }
+        
+        .keyword {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .section-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .section-title:before {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 30px;
+            background-color: #3498db;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        
+        .system-block {
+            background-color: #e8f4fc;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .system-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #2c3e50;
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+}
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Особенности информационного, программного и технического обеспечения различных видов ИС</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content-card">
+            <p>Давайте разберем особенности обеспечения для основных типов информационных систем (ИС).</p>
+            <p>Сначала вспомним устройство и функционирование ИС: это всегда комплекс взаимосвязанных компонентов (обеспечивающих подсистем), работающих вместе с людьми для сбора, обработки, хранения и распространения информации с целью поддержки бизнес-процессов, анализа и принятия решений.</p>
+        </div>
+
+        <div class="content-card">
+            <div class="section-title">
+                <h2>Классификация ИС по уровню управления и охвату задач</h2>
+            </div>
+            
+            <p>Мы рассмотрим особенности обеспечения на примере четырех основных типов ИС:</p>
+            
+            <ol>
+                <li>Системы операционного (transaction processing systems) и автоматизированные системы управления (АСУ)</li>
+                <li>Информационные системы для поддержки принятия решений (Decision Support Systems, DSS) и офисы экспертов</li>
+                <li>Корпоративные информационные системы (Enterprise Resource Planning, ERP)</li>
+                <li>Геоинформационные системы (ГИС)</li>
+            </ol>
+        </div>
+
+        <div class="content-card">
+            <div class="section-title">
+                <h2>1. Системы операционного уровня (TPS) и АСУ</h2>
+            </div>
+            
+            <p><span class="keyword">Назначение:</span> Регистрация, обработка и хранение ежедневных операций (транзакций). Автоматизация рутинных задач.</p>
+            
+            <p><span class="keyword">Примеры:</span> Система учета продаж в магазине, система бронирования билетов, банковские операции по счетам, АСУ "Теплоснабжение".</p>
+            
+            <h3>Особенности обеспечения:</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Обеспечение</th>
+                        <th>Особенности</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Информационное (ИО)</td>
+                        <td>
+                            <ul>
+                                <li><span class="keyword">Структурированность:</span> Данные строго структурированы, регламентированы (справочники товаров, клиентов, типов операций).</li>
+                                <li><span class="keyword">Большие объемы:</span> Высокие требования к хранению большого количества записей о транзакциях</li>
+                                <li><span class="keyword">Актуальность:</span> Требуется постоянное и быстрое обновление данных (остатки на складе должны меняться сразу после продажи).</li>
+                                <li><span class="keyword">Историчность:</span> Данные редко удаляются, накапливается подробная история всех операций</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Программное (ПО)</td>
+                        <td>
+                            <ul>
+                                <li><span class="keyword">СУБД:</span> Используются реляционные СУБД (MySQL, PostgreSQL, MS SQL Server, Oracle) для обеспечения целостности и согласованности данных (транзакции ACID).</li>
+<li><span class="keyword">Прикладное ПО:</span> Часто разрабатывается под конкретную задачу (заказная разработка) или настраивается под нужды предприятия (на базе платформ типа 1С).</li>
+                                <li><span class="keyword">Интерфейс:</span> Преобладают формные интерфейсы для быстрого ввода данных</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Техническое (ТО)</td>
+                        <td>
+                            <ul>
+                                <li><span class="keyword">Надежность:</span> Требуется высоконадежное оборудование с дублированием критических компонентов (дисковые массивы RAID, резервные источники питания).</li>
+                                <li><span class="keyword">Производительность:</span> Высокие требования к скорости обработки транзакций (Input/Output Operations Per Second - IOPS) и отказоустойчивости дисковой подсистемы.</li>
+                                <li><span class="keyword">Доступность:</span> Система должна быть доступна в режиме, близком к 24/7.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content-card">
+            <div class="section-title">
+                <h2>2. Системы поддержки принятия решений (DSS) и офисы экспертов</h2>
+            </div>
+            
+            <p><span class="keyword">Назначение:</span> Анализ данных, моделирование ситуаций, подготовка отчетов для менеджеров среднего и высшего звена.</p>
+            
+            <p><span class="keyword">Примеры:</span> Система анализа продаж по регионам, система прогнозирования спроса, BI-системы (Power BI, Tableau).</p>
+            
+            <h3>Особенности обеспечения:</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Обеспечение</th>
+                        <th>Особенности</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Информационное (ИО)</td>
+                        <td>
+                            <ul>
+                                <li><span class="keyword">Интеграция:</span> Данные поступают из различных источников: операционных систем (TPS), внешних баз данных, Excel-файлов.</li>
+                                <li><span class="keyword">Агрегированность:</span> Данные часто предварительно агрегируются и очищаются (хранятся в хранилищах данных - Data Warehouse).</li>
+                                <li><span class="keyword">Многомерность:</span> Данные организованы в виде OLAP-кубов для быстрого и гибкого анализа по множеству измерений (время, регион, товарная категория).</li>
+                                <li><span class="keyword">Релевантность:</span> Важна не свежесть каждой транзакции, а корректность и полнота данных для анализа</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Лекция по особенностям обеспечения различных видов информационных систем</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
